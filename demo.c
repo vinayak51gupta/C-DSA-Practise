@@ -1,4 +1,5 @@
 #include<stdio.h>
 void main(){
-    printf("hello world.com");
+    char a , b;
+    printf("%c" , a|b);
 }
