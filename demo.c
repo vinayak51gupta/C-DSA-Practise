@@ -1,14 +1,21 @@
 #include<stdio.h>
-int sum(int no);
 void main(){
-    int no;
-    printf("enter n to print sum of n natural nos=");
-    scanf("%d" , &no);
-    printf("sum will be=%d" , sum(no));
-}
-int sum(int no){
-    if(no==1){
-        return 1;
+    int a , b;
+    printf("enter first value=");
+    scanf("%d" , &a);
+    printf("enter second value=");
+    scanf("%d" , &b);
+    printf("prime no in range=\n");
+    for(int i = a ; i <= b ; i++){
+       int istrue = 1;
+     for(int j = 2 ; j<=(i-1) ; j++){
+       if(i%j==0){
+        istrue = 0;
+        break;
+       }
+     }
+     if(istrue==1){
+        printf("%d " , i);
+     }
     }
-    return no*sum(no-1);
 }

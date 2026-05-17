@@ -1,12 +1,8 @@
 #include<stdio.h>
 #include<math.h>
-void printsquare(int no);
 void main(){
     int no;
-    printf("enter a no to print its square=");
+    printf("enter a no=");
     scanf("%d" , &no);
-    printsquare(no);
-}
-void printsquare(int no){
- printf("square of the no is =%f" , pow(no , 2));
+    printf("square of no is=%f" , pow(no , 2));
 }
