@@ -6,5 +6,5 @@ void main(){
     printaddress(&n);
 }
 void printaddress(int *n){
-    printf("%p\n" , n);
+    printf("%p\n" , &n);
 }
