@@ -1,8 +1,8 @@
 #include<stdio.h>
 void main(){
-    char name[100];
-    printf("Enter your full name=");
-    fgets(name , 100 , stdin);
-    printf("your full name is=");
+    char name[30];
+    printf("enter full name=");
+    fgets(name , 30 , stdin);
+    printf("your full name is =");
     puts(name);
 }

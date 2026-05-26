@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main(){
-    char name[40];
-    printf("enter your name=");
-    scanf("%s" , name);
-    printf("your name is=%s" , name);
+    char name[30];
+    printf("enter full name=");
+    scanf("%s" , &name);
+    printf("name=%s" , name);
 }
