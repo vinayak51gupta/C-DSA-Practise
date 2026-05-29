@@ -1,21 +1,19 @@
 #include<stdio.h>
 #include<string.h>
+struct Student{
+  char name[100];
+  int rollno;
+  float cgpa;
+};
 void main(){
-    int istrue=0;
-    char ch;
-    char str[] = "vinayak gupta";
-    printf("enter a character=");
-    scanf("%c" , &ch);
-    for(int i=0 ; i<=strlen(str) ; i++){
-     if(str[i]==ch){
-        istrue=1;
-        break;
-     }
-    }
-    if(istrue==1){
-        printf("character is present");
-    }
-    else{
-        printf("character is not present");
-    }
+  struct Student s[5];
+   for(int i=0 ; i<=4 ; i++){
+    printf("\nenter details of student %d=\n" , i+1);
+    printf("name=");
+    scanf("%s" , &s[i].name);
+    printf("rollno=");
+    scanf(" %d" , &s[i].rollno);
+    printf("cgpa=");
+    scanf(" %f" , &s[i].cgpa);
+   }
 }
