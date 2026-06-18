@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-void main(){
+void main(){      //comment
   int *ptr;
   ptr = (int*)calloc(5 , sizeof(int));
   for(int i=0 ; i<=4 ; i++){

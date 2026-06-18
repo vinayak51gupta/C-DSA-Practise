@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-void main(){
+void main(){      // comment 
   int *ptr;
   int odd=1;
   int even=2;
